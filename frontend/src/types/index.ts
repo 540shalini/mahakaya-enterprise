@@ -1,0 +1,1 @@
+export type LoanType='Personal Loan'|'Business Loan'|'Home Loan'|'Gold Loan'|'Education Loan'|'Vehicle Loan'|'Property Loan'|'Mortgage Loan';export interface Service{title:LoanType;description:string;features:string[];eligibility:string[]}

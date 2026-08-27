@@ -1,0 +1,2 @@
+import { ContactMessage } from '../models.js';import { sendMail } from '../services/mailService.js';
+export async function contact(req,res){const message=await ContactMessage.create(req.body);await sendMail({to:req.body.email,subject:'Thank you for contacting Mahakaya Enterprise',text:'Our finance advisor will contact you shortly.'});res.status(201).json({message:'Message received',data:message});}
