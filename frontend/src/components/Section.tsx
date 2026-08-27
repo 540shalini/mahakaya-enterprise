@@ -1,0 +1,1 @@
+import { motion } from 'framer-motion';import type { ReactNode } from 'react';export function Section({children,className=''}:{children:ReactNode;className?:string}){return <motion.section initial={{opacity:0,y:24}} whileInView={{opacity:1,y:0}} viewport={{once:true}} transition={{duration:.55}} className={`container-pad py-16 ${className}`}>{children}</motion.section>}
